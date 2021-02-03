@@ -14,15 +14,17 @@ public class ItemDatabase: MonoBehaviour
     public static void BuildDataBase()
     {
         items = new List<Item> {
-            new Item(0, "Gray Shirt", "A plain gray shirt.", false, ItemType.clothing,
+            new Item(0, "Gray Shirt", "A plain gray shirt.", ItemType.clothing,
             new Dictionary<string, int>
             {
-                {"Protection", 1}
+                {"Protection", 1},
+                {"Contraband", 0}
             }),
-            new Item(0, "Gray Pants", "Plain gray pants.", false, ItemType.clothing,
+            new Item(0, "Gray Pants", "Plain gray pants.", ItemType.clothing,
             new Dictionary<string, int>
             {
-                {"Protection", 1}
+                {"Protection", 1},
+                {"Contraband", 0}
             })
         };
     }
