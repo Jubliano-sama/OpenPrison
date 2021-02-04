@@ -7,10 +7,9 @@ public class Item
     public int id;
     public string title;
     public string description;
-    public ItemType itemType;
     public Sprite icon;
     public Dictionary<string, int> stats = new Dictionary<string, int>();
-    public Item(int id, string title, string description, ItemType itemType,
+    public Item(int id, string title, string description,
         Dictionary<string, int> stats)
     {
         this.id = id;
@@ -18,9 +17,8 @@ public class Item
         this.description = description;
         this.icon = Resources.Load<Sprite>("Textures/Items/" + title);
         this.stats = stats;
-        this.itemType = itemType;
     }
-    public Item(int id, string title, string description, ItemType itemType,
+    public Item(int id, string title, string description,
         Dictionary<string, int> stats, Sprite icon)
     {
         this.id = id;
@@ -28,7 +26,6 @@ public class Item
         this.description = description;
         this.icon = icon;
         this.stats = stats;
-        this.itemType = itemType;
     }
     public Item(Item item)
     {

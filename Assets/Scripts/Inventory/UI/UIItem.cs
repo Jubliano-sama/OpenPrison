@@ -33,7 +33,6 @@ public class UIItem : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("click");
         if (this.item != null)
         {
             if(selectedItem.item != null)
@@ -50,7 +49,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler
         } else if(selectedItem.item != null)
         {
             UpdateItem(selectedItem.item);
-            selectedItem.item = null;
+            selectedItem.UpdateItem(null);
         }
     }
 }

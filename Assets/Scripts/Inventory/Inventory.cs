@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
         GiveItem("Gray Pants");
         GiveItem("Gray Pants");
         GiveItem("Gray Pants");
-        GiveItem("Gray Pants");
+        GiveItem("Gray Shirt");
     }
     public void GiveItem(int id)
     {
