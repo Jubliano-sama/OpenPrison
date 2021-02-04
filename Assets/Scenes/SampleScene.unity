@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94f93550d257e1249b3d4a6547fba588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryUI: {fileID: 1525212907}
 --- !u!136 &244855895
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -738,6 +739,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e8c4bf2caae40445a22e77485b641ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uIItems: []
+  slotPrefab: {fileID: 7834660927906159968, guid: b9aea469df31f9f4b919e3d467503f95, type: 3}
+  slotPanel: {fileID: 350963067}
+  numberOfSlots: 20
 --- !u!114 &1525212908
 MonoBehaviour:
   m_ObjectHideFlags: 0

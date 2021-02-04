@@ -10,8 +10,11 @@ public class Inventory : MonoBehaviour
     {
         // testing
         GiveItem("Gray Pants");
-        GiveItem(0);
-        RemoveItem(1);
+        GiveItem("Gray Pants");
+        GiveItem("Gray Pants");
+        GiveItem("Gray Pants");
+        GiveItem("Gray Pants");
+        GiveItem("Gray Pants");
     }
     public void GiveItem(int id)
     {
