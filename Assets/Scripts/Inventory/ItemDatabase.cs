@@ -20,7 +20,7 @@ public class ItemDatabase: MonoBehaviour
                 {"Protection", 1},
                 {"Contraband", 0}
             }),
-            new Item(0, "Gray Pants", "Plain gray pants.", ItemType.clothing,
+            new Item(1, "Gray Pants", "Plain gray pants.", ItemType.clothing,
             new Dictionary<string, int>
             {
                 {"Protection", 1},
