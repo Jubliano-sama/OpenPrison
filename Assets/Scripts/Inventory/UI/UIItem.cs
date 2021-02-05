@@ -42,6 +42,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
                 Item clone = new Item(selectedItem.item);
                 selectedItem.UpdateItem(this.item);
                 UpdateItem(clone);
+                tooltip.GenerateTooltip(clone);
             }
             else
             {
@@ -52,6 +53,7 @@ public class UIItem : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler,
         {
             UpdateItem(selectedItem.item);
             selectedItem.UpdateItem(null);
+            tooltip.GenerateTooltip(item);
         }
     }
 
